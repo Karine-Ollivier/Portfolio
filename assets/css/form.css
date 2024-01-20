@@ -1,0 +1,72 @@
+  .contact-me  {
+    background: #EEEEEE;
+    font-family: Arial;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 350px;
+    margin: 0;
+    box-shadow: 4px 4px 5px #999999;
+    padding-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+    .contact-me form {
+      background: #FFFFFF;
+      width: 350px;
+      text-align: center;
+      margin: 30px auto;
+      box-shadow: 4px 4px 5px #999999;
+      padding-bottom: 40px;
+      border-radius: 10px;
+    }
+    .contact-me h3 {
+      height: 40px;
+      width: 350px;
+      font-size: 20px;
+      background-color:#E91E63;
+      color:white;
+      padding: 15px 0 0 0;
+      border-radius: 10px 10px 0 0;
+    }
+    .contact-me textarea {
+      width: 300px;
+      margin: 20px 0;
+      padding: 10px;
+      border: none;
+      border-bottom: solid 1px #E91E63;
+      font-family: Arial;
+      color: #E91E63;
+      /*resize: vertical;  Permet à l'utilisateur de redimensionner verticalement */
+    }
+    
+    .contact-me input {
+      margin: 20px 0px;
+      width: 300px;
+      border: none;
+      padding: 5px 0;
+      border-bottom: solid 1px #E91E63;
+      color: #E91E63;
+    }
+    
+    .buttons-container {
+      display: flex;
+      justify-content: center; /* Centre les boutons horizontalement */
+      gap: 10px; /* Espace entre les boutons */
+  }
+  
+    .contact-me button {
+        border: none;
+        background-color: #E91E63;
+        color: white;
+        height: 40px;
+        min-width: 150px; /* Assure une largeur minimale pour les deux boutons */
+        font-size: 15px;
+        box-shadow: 4px 4px 5px #999999;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-top: 20px; /* Espace au-dessus des boutons */
+    }

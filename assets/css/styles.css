@@ -1,0 +1,252 @@
+/* Styles de base */
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background-color: black;
+  font-family: Josefin Sans, sans-serif;
+}
+
+h1,
+h2,
+h3,
+p,
+span,
+#contact {
+  color: white;
+}
+
+/* Styles pour écrans larges */
+@media (min-width: 769px) {
+
+nav {
+  position: sticky;
+  top: 50%;
+  left: 5%;
+  font-size: 2em;
+}
+
+.wrapper,
+.wrapper2 {
+  transition-duration: 200ms;
+  width: 1.5em;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.wrapper:hover {
+  width: 2em;
+}
+.wrapper2:hover {
+  width: 6em;
+}
+
+.show {
+  color: white;
+}
+
+.about-author {
+  height: 130vh;
+}
+
+.about-author h1 {
+  display: inline-block;
+  inline-size: 60%;
+  font-size: 6em;
+  position: relative;
+  left: 30%;
+}
+.whoami {
+  text-align: center;
+}
+.author-name {
+  padding: 5em 0 0 0;
+  width: 50%;
+}
+
+.about-works span,
+.author-name {
+  position: relative;
+  left: 20%;
+  padding: 5em 0 0 0;
+}
+.about-works {
+  padding: 5em 0 0 0;
+}
+.author-blurb {
+  margin: 0;
+  width: 40%;
+  position: relative;
+  left: 30%;
+}
+.author-name-hidden-text {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.author-blurb .tooltip {
+  visibility: hidden;
+  width: 250px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -125px;
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.author-blurb:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+.work {
+  height: 130vh;
+  margin: auto;
+  width: 60%;
+  padding: 0 0 5em 0;
+}
+
+.work img {
+  display: block;
+  margin: 0 auto;
+  transition-duration: 500ms;
+  opacity: 50%;
+}
+.work h3 {
+  position: sticky;
+  opacity: 1;
+  top: 20%;
+  left: 30%;
+  display: inline-block;
+  text-align: center;
+  font-size: 3em;
+  z-index: 5;
+  transition-duration: 1000ms;
+}
+
+.work p {
+  color: black;
+  opacity: 0;
+  width: 40%;
+  position: relative;
+  top: -20%;
+  z-index: 5;
+  margin: auto;
+  background-color: white;
+  border: 3px black solid;
+  border-radius: 20px;
+  box-shadow: 5px 3px 3px;
+  transition-duration: 500ms;
+}
+
+.contact-me {
+  position: sticky;
+  top: 45%;
+  left: 45%;
+  width: 30%;
+  background-color: white;
+  opacity: 0;
+  z-index: 5;
+}
+
+.show-me {
+  filter: blur(0);
+  opacity: 1;
+}
+.blur {
+  filter: blur(3px);
+}
+
+.work h3,
+img,
+p {
+  pointer-events: none;
+}
+
+.work:hover > img {
+  filter: blur(3px);
+}
+
+.work:active > h3 {
+  opacity: 0;
+  left: 40%;
+  padding: 0;
+  transform: rotate(20deg);
+  z-index: -1;
+}
+
+.work:hover > p {
+  top: -30%;
+  opacity: 1;
+  padding: 2em;
+}
+}
+
+/* Styles pour mobiles */
+@media (max-width: 480px) {
+  h1, h2, h3, p, span, #contact {
+    font-size: 0.8em;
+  }
+
+  .about-author, .work {
+    height: auto;
+  }
+
+  .about-author h1, .work h3 {
+    font-size: 2em;
+    left: 10%;
+  }
+
+  .work img {
+    width: 100%;
+  }
+
+  .work p, .author-blurb {
+    width: 80%;
+    left: 10%;
+  }
+
+  .contact-me {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+/* Styles pour tablettes */
+@media (min-width: 481px) and (max-width: 768px) {
+  h1, h2, h3, p, span, #contact {
+    font-size: 0.9em;
+  }
+
+  .about-author h1, .work h3 {
+    font-size: 3em;
+    left: 15%;
+  }
+
+  .work img {
+    width: 80%;
+  }
+
+  .work p, .author-blurb {
+    width: 70%;
+    left: 15%;
+  }
+
+  .contact-me {
+    width: 60%;
+    left: 20%;
+  }
+}
