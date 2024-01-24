@@ -171,12 +171,6 @@ nav {
   filter: blur(3px);
 }
 
-.work h3,
-img,
-p {
-  pointer-events: none;
-}
-
 .work:hover > img {
   filter: blur(3px);
 }
