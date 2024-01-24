@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Karine Ollivier - Développeuse Web Backend en Bretagne, spécialisée en JavaScript, Symfony, PHP, Node.js et SQL/NoSQL">
+        <meta name="keywords" content="Karine Ollivier, Développeuse Web, Backend, JavaScript, Symfony, PHP, Node.js, SQL, NoSQL">
+    <title>Oflix - Détails du Projet</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+     <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    </head>
+      
+    <body>
+
+    <div class="project-details">
+        <h1>Oflix</h1>
+        <h2>Mon premier projet réalisé avec Symfony !</h2>
+        <a href="https://github.com/Karine-Ollivier"> Mon projet sur GitHub </a>
+        <h2 id="présentation-du-projet"> Présentation du Projet </h2>
+        <p>Oflix est une plateforme de films développée avec Symfony pendant ma formation. Cette application vous permet de découvrir, évaluer, critiquer et sauvegarder vos films préférés. Elle offre une expérience complète pour les amateurs de cinéma.</p>
+
+        <img src="./assets/capture_oflix.png" alt="Capture d'écran Oflix">
+        <img src="./assets/oflix-critique.png" alt="Capture d'écran Oflix">
+
+        <h2>Fonctionnalités</h2>
+        <h3>Côté Utilisateur</h3>
+        <ul>
+            <li>Liste de Films : Parcourez une vaste collection de films avec des informations détaillées.</li>
+            <li>Détail d’un Film : Consultez les détails d’un film, y compris la liste des acteurs et les critiques.</li>
+            <li>Ajout de Critiques : Partagez vos avis en ajoutant des critiques et des notes aux films.</li>
+            <li>Évaluation par Étoiles : Évaluez les films en attribuant des étoiles.</li>
+            <li>Gestion des Films Favoris : Créez une liste de films favoris qui est sauvegardée dans votre session.</li>
+            <li>Connexion au Site : Créez un compte et connectez-vous pour accéder à toutes les fonctionnalités.</li>
+            <li>Recherche de Films : Recherchez des films par titre, genre, acteur, réalisateur, etc.</li>
+        </ul>
+        <h3>Côté Backoffice</h3>
+        <ul>
+            <li>Gestion des Films : Effectuez des opérations CRUD (Création, Modification, Suppression) sur les films.</li>
+            <li>Gestion des Utilisateurs : Administrez les comptes utilisateur avec des droits appropriés.</li>
+            <li>Sécurité : Gestion de la sécurité avec Symfony pour protéger les données sensibles.</li>
+            <li>Fixtures : Utilisation de fixtures pour peupler la base de données avec des données de test.</li>
+            <li>Modèle MVC : Respect du modèle MVC (Modèle-Vue-Contrôleur) pour une structure claire de l’application.</li>
+            <li>Requêtes avec QueryBuilder : Utilisation de QueryBuilder pour gérer les requêtes complexes à la base de données.</li>
+            <li>Sécurité CORS : Configuration de la sécurité CORS pour permettre l’accès à l’API depuis différents domaines.</li>
+            <li>Tests : Intégration de tests pour garantir la fiabilité de l’application.</li>
+            <li>Services : Utilisation de services, par exemple pour envoyer des e-mails à la création d’un film.</li>
+            <li>API : Création d’une API pour permettre l’accès aux données à partir d’autres applications.</li>
+        </ul>
+
+        <h2>Installation</h2>
+        <p>Pour exécuter Oflix localement, suivez ces étapes :</p>
+        <ol>
+            <li>Clonez ce référentiel sur votre machine locale en utilisant la commande suivante : <code>git clone https://github.com/votre-utilisateur/oflix.git</code></li>
+            <li>Assurez-vous d’avoir PHP, Symfony, MySQL (ou tout autre système de gestion de base de données de votre choix) installés sur votre machine.</li>
+            <li>Configurez les paramètres de connexion à la base de données dans le fichier de configuration approprié.</li>
+            <li>Installez les dépendances du projet en exécutant : <code>composer install</code></li>
+            <li>Créez la base de données et exécutez les migrations : <code>php bin/console doctrine:database:create</code> et <code>php bin/console doctrine:migrations:migrate</code></li>
+            <li>Chargez les fixtures pour peupler la base de données de test (facultatif) : <code>php bin/console doctrine:fixtures:load</code></li>
+            <li>Lancez le serveur Symfony : <code>symfony serve</code></li>
+            <li>Ouvrez votre navigateur et accédez à l’adresse <a href="http://localhost:8000">http://localhost:8000</a> pour utiliser Oflix localement.</li>
+        </ol>
+
+        <h2>Personnalisation</h2>
+        <p>Vous pouvez personnaliser Oflix en fonction de vos besoins spécifiques en modifiant les vues, les contrôleurs et les modèles du modèle MVC de Symfony.</p>
+        <p>Oflix a été développé pour offrir une expérience complète de découverte et d’interaction avec des films. Si vous avez des questions, des suggestions d’amélioration ou besoin d’aide pour personnaliser l’application, n’hésitez pas à me contacter. Profitez de votre expérience cinématographique sur Oflix ! 🎥🍿</p>
+
+        <footer>
+            <div class="container text-center">
+                <div class="row">
+                    <p>Designed by <span>Eko</span></p>
+    
+    
+                    <div class="social-btn">
+                        <a class="btn btn-social btn-twitter" href="#">
+                          <span class="fab fa-twitter fa-3x"></span>
+                        </a>
+    
+                        <a class="btn btn-social btn-linkedin" href="https://www.linkedin.com/in/karine-e-ollivier" target='_blank'>
+                          <span class="fab fa-linkedin fa-3x"></span>
+                        </a>
+    
+                        <a class="btn btn-social btn-github" href="https://github.com/Karine-Ollivier" target='_blank'>
+                          <span class="fab fa-github fa-3x"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+        </footer>
+    </div>
+</body>
+</html>
