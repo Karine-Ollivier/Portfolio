@@ -1,20 +1,21 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TripBuddy - Simplifiez votre planification de voyage avec notre application intuitive. Créez, gérez et partagez vos itinéraires de voyages facilement.">
+    <meta name="keywords" content="planification de voyage, itinéraires personnalisés, TripBuddy, application de voyage">
     <title>TripBuddy - Détails du Projet</title>
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'> 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
-     <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/form.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom CSS pour TripBuddy -->
+    <link rel="stylesheet" href="assets/css/tripbuddy-page.css">
+
 </head>
 <body>
-
-    <div class="project-details">
+  <div id="smooth-wrapper">
+    <div id="smooth-content">
+      <div class="project-details">
         <h1>TripBuddy</h1>
         <h2>Projet de fin de formation</h2>
         <a href="https://github.com/votre-utilisateur/tripbuddy-frontend">Mon projet sur GitHub - Partie Frontend</a> </br>
@@ -25,8 +26,9 @@
 
         <h2>Fonctionnalités Clés</h2>
         <ul>
-            <li>Carte Interactive : Explorez le monde à travers notre carte interactive alimentée par l’API Mapbox.</li>
-            <li>Planification Intuitive : Créez un compte pour planifier vos voyages en toute simplicité.</li>
+          <li data-speed="0.5">Carte Interactive : Explorez le monde à travers notre carte interactive alimentée par l’API Mapbox.</li>
+          <li data-speed="1">Planification Intuitive : Créez un compte pour planifier vos voyages en toute simplicité.</li>
+          
             <li>Détails des Destinations : Cliquez sur un marqueur pour afficher des informations sur la destination.</li>
             <li>Itinéraire Personnalisé : Visualisez votre itinéraire sur la carte avec un tracé clair et compréhensible.</li>
             <li>Sauvegarde d’Itinéraire : Enregistrez vos itinéraires pour les retrouver facilement lors de vos prochains voyages.</li>
@@ -41,10 +43,17 @@
             <li>Base de Données pour stocker les itinéraires des utilisateurs.</li>
             <li>PHP pour la gestion côté serveur.</li>
         </ul>
+        <div class="screenshots-container">
+          <h2>Captures d’écran</h2>
+            <img src="./assets/creation-itineraire.png" alt="Capture d'écran de l'application tripbuddy"data-lag="0.8">
+            <img src="./assets/mes-itineraires-page-profil.png" alt="Capture d'écran de l'application tripbuddy"data-lag="0.8">
+            <img src="./assets/enregister-itinéraires-carte.png" alt="Capture d'écran de l'application tripbuddy"data-lag="0.8">
+            <img src="./assets/dasboard_utilisateur.png" alt="Capture d'écran du Backoffice de l'application tripbuddy"data-lag="0.8">
+  
+        </div>
 
-        <h2>Captures d’écran</h2>
-        <img src="./assets/creation-itineraire.png" alt="Capture d'écran de l'application tripbuddy">
-        <img src="./assets/mes-itineraires-page-profil.png" alt="Capture d'écran de l'application tripbuddy">
+    </div>
+  </div>
         <footer>
             <div class="container text-center">
                 <div class="row">
@@ -69,5 +78,14 @@
     
         </footer>
     </div>
+    <!-- CDN pour jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- CDN pour GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.5.1/dist/gsap.min.js"></script>
+
+    <!-- Votre script personnalisé externe -->
+    <script src="animations.js"></script>
+
 </body>
 </html>
